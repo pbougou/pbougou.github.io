@@ -1,0 +1,6 @@
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap
+[submodule "monosocialiconsfont"]
+	path = monosocialiconsfont
+	url = https://github.com/drinchev/monosocialiconsfont.git

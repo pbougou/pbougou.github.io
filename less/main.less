@@ -1,0 +1,187 @@
+// Header: bootstrap
+@import "../node_modules/bootstrap-less-port/less/_utilities";
+// Required Files 
+@import "../node_modules/bootstrap-less-port/less/_functions";
+@import "../node_modules/bootstrap-less-port/less/_variables";
+@import "../node_modules/bootstrap-less-port/less/_mixins";
+
+// Optional Files 
+@import "../node_modules/bootstrap-less-port/less/_reboot";
+@import "../node_modules/bootstrap-less-port/less/_type";
+@import "../node_modules/bootstrap-less-port/less/_grid";
+@import "../node_modules/bootstrap-less-port/less/bootstrap";
+
+// Color theme
+@import "variables";
+@import "bootstrap-solarized-light";
+
+// Bootstrap customization
+@jumbotron-padding: 10px;
+@jumbotron-font-size: ceil((@font-size-base * 1.25));
+
+// Social buttons
+@import "social";
+
+// Customization
+@import "custom-grid";
+
+html, body {
+    height: 100%;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: @gray-lighter;
+    font-family: "Source Sans Pro";
+    font-size: 14pt;
+
+}
+
+#main-content h2 {
+    font-style: italic;
+    font-weight: 200;
+}
+
+#top-bar {
+    background: rgb(7,54,66);
+    padding-left: -200px;
+    padding-right: 30px;
+    top: 0;
+}
+
+#site-title {
+    text-align: left;
+    display: inline-block;
+    max-width: 1045px;
+    min-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name-title {
+    text-align: left;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    font-size: 30pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(181,137,0);
+    flex: 0 0 auto
+}
+
+#main-content > col-sm-3 {
+    padding: 20px;
+    margin: auto;
+    max-width: 1075px;
+    min-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    text-align: justify;
+    justify-content: center;
+}
+
+#page-text {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: -15px;
+
+    font-size: 18pt;
+    font-weight: 300;
+    line-height: 1.35;
+    hyphens: auto;
+
+    min-width: 300px;
+    max-width: 750px;
+    overflow: hidden;
+    flex: 3 1 auto;
+}
+
+.id-photo {
+    text-align: center;
+}
+
+.id-photo img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding-top: @grid-gutter-width;
+    padding-bottom: @grid-gutter-width / 2;
+    border-radius: 100%;
+}
+
+#cv-button a {
+    background-color:  #828e91;
+    font-style: normal;
+    margin-left: 98px;
+    font-size: 14pt;
+    color: #073642;
+    font-weight: 200;
+    font-family: "Source Code Pro";
+}
+
+img.social-logo {
+    height: 16px;
+    padding-right: @grid-gutter-width / 8;
+}
+
+span.recommend-logo {
+    display: inline-block;
+    width: 64px;
+    text-align: center;
+}
+
+span.recommend-logo img {
+    max-width: 64px;
+    max-height: 32px;
+    width: auto;
+    padding-right: @grid-gutter-width / 4;
+}
+
+span.githash {
+    color: @gray-lighter;
+}
+
+span.githash:hover {
+    color: @gray;
+}
+
+i.contact-icon {
+    width: 1.5em;
+    text-align: left;
+}
+
+// Fonts
+@import url(//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic&subset=latin,greek);
+@import url(//fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic&subset=latin,greek);
+
+@font-family-sans-serif: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
+@font-family-serif: 'Tinos', 'PT Serif', 'Times New Roman', Times;
+
+footer {
+    background-color: rgb(7,54,66);
+    font-size:13px;
+    font-weight: 200;
+    text-align: justify;
+    text-justify: distribute;
+    height:4em;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    overflow:hidden;
+    padding-top:1em;
+    color: @gray-lighter;
+}
